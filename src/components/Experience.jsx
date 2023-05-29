@@ -282,9 +282,9 @@ export const Experience = () => {
     [curvePoints]
   );
 
-  const linePoints = useMemo(() => {
-    return curve.getPoints(LINE_NB_POINTS);
-  }, [curve])
+  // const linePoints = useMemo(() => {
+  //   return curve.getPoints(LINE_NB_POINTS);
+  // }, [curve])
 
   const shape = useMemo(() => {
     const shape = new THREE.Shape();
