@@ -4,7 +4,7 @@ import React from "react";
 import { fadeOnBeforeCompile } from "../utils/fadeMaterial";
 
 export function Cloud({ opacity, ...props }) {
-  const { nodes, materials } = useGLTF("./models/cloud/model.gltf");
+  const { nodes } = useGLTF("./models/cloud/model.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Mball001.geometry}>
