@@ -29,7 +29,7 @@ const Navbar = () => {
                   <a href="./threed">view 3D</a>
                 </li> */}
                 <li>
-                  <a href="https://drive.google.com/file/d/1_k8XXKI2gQv1-XmFPUxCYSomZnaqeMh9/view?usp=drivesdk">Resume</a>
+                  <a href="https://drive.google.com/file/d/1p7-iY0hufd4Vbp-17mBJsizNmgu86IrO/view">Resume</a>
                 </li>
               </ul>
             </div>
