@@ -1,5 +1,5 @@
 import React, { useRef, useMemo } from "react";
-import { Float, OrbitControls, Line, PerspectiveCamera, useScroll, Text } from "@react-three/drei";
+import { Float, PerspectiveCamera, useScroll } from "@react-three/drei";
 import { Background } from "./Background.jsx";
 import { Airplane } from "./Airplane.jsx";
 import { Cloud } from "./Cloud.jsx";
@@ -34,7 +34,7 @@ export const Experience = () => {
       false,
       "catmullrom",
       0.5)
-  }, [])
+  }, [curvePoints])
 
   const textSections = useMemo(()=>{
     return [
@@ -93,7 +93,7 @@ export const Experience = () => {
     },
 
     ]
-  }, [])
+  }, [curvePoints])
 
 
   const clouds = useMemo(
@@ -279,7 +279,7 @@ export const Experience = () => {
         rotation: new Euler(0, 0, 0),
       },
     ],
-    []
+    [curvePoints]
   );
 
   const linePoints = useMemo(() => {
